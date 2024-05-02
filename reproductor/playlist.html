@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<script src="jsaudio/js/jquery.js"></script>
+	<script src="jsaudio/js/jquery.audioControls.min.js"></script>
+
+	<!--llamando la libreria personal-->
+	<script src="jsaudio/js/funciones.js"></script>
+
+	<style>
+		
+		.img1
+		{
+			filter: drop-shadow( 1px 1px 20px gray);
+		}
+        .boto
+        {
+        	background: #CCD1D1;
+        	border-radius: 10px       }
+
+        	.tit
+        	{
+        		background: #E5E8E8;
+        		border-radius: 10px;
+        	}
+        	body { background: linear-gradient(to bottom, #717D7E, #F2F3F4); margin: 0; height: 100vh; }
+        	.lista
+        	{
+
+        	}
+        	a 
+        	{
+        		text-decoration: none;
+        		color: black;
+
+        	}
+        	.playlist
+        	{
+        		border-radius: 5px;
+
+        	}
+        	.lista
+        	{
+        		border-radius: 5px;
+        		text-align: center;
+        	}
+	</style>
+</head>
+<body>
+
+<div class="fondo">
+
+<section class="row">
+	
+<main class="col-lg-6 mt-5" >
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-arrow-left"></i>
+				</div>
+		</div>
+			
+			<div class="col-auto botoncabecera">
+				<p class="d-none d-md-block">Ahora</p>
+				<p class="d-block d-md-none">Reproductor de musica</p>
+			</div>
+
+
+			<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-bars"></i>				
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row text-center">
+			<div class="col">
+				<img class="img1" src="fot/tha.jpg">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col text-center">
+				<h1><span class="col-3 nombremp3"></span></h1>
+				<span class="col-3 text-end audioTime" data-attr="timer"></span>
+			</div>
+		</div>
+
+
+			<div class="row justify-content-between">
+			
+			</div>
+
+			<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+		  	<div class="progress-bar updateProgress"></div>
+			</div>
+
+
+		<!--button class="btn btn-primary">hola</button>
+		<i class="fa-solid fa-arrow-left"></i!-->
+
+
+
+	<div class="row justify-content-center">
+		<div class="col-auto botoncabecera">
+			<div class="botones">
+				<i class="fa-solid fa-backward-step"></i>
+			</div>
+			</div>
+
+			<div class="col-auto botoncabecera">
+				<i class="fa-solid fa-pause"></i>
+			<!--i class="fa-solid fa-play"></i!-->
+			</div>
+
+
+			<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-forward-step"></i>
+				</div>
+
+	</div>
+
+
+	</div>
+</main>
+
+
+<aside class="col-lg-6 mt-5 lista">
+	<hr>
+
+	<ul class="mt-5 playlist bg-transparent list-group-numbered m-5">
+
+		<h2>Lista de canciones</h2>
+
+	  <li class="list-group-item list-group-item-dark lista m-2" data-src="music/Morat - Antes De Los Veinte.mp3">
+	  	<a href="#">Morat - Antes De Los Veinte</a>
+	  </li>
+
+	  <li class="list-group-item list-group-item-dark lista m-2" data-src="music/Morat - Mi Suerte.mp3">
+	  	<a href="#">Morat - Mi Suerte</a>
+	  </li>
+
+	  <li class="list-group-item list-group-item-dark lista m-2" data-src="music/Siddartha - Diamantes.mp3">
+	  	<a href="#">Siddartha - Diamantes</a>
+	  </li>
+
+	  <li class="list-group-item list-group-item-dark lista m-2" data-src="music/Siddartha - Extraños.mp3">
+	  	<a href="#">Siddartha - Extraños</a>
+	  </li>
+
+	  <li class="list-group-item list-group-item-dark lista m-2" data-src="music/Siddhartha  - Bacalar.mp3">
+	  	<a href="#">Siddartha - Bacalar</a>
+	  </li>
+	</ul>
+</aside>
+
+</section>
+
+
+</body>
+</html>
