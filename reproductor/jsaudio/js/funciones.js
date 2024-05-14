@@ -13,6 +13,10 @@ $(document).ready(function()
 
 	});
 
-	
+	$('a.play').click(function()
+	{
+		$(this).find('i').toggleClass('fa-play fa-pause');
+		
+	});
 
 });
